@@ -24,5 +24,6 @@
            END-IF.
 
            DISPLAY "The largest number is: " LARGEST.
+           DISPLAY "The largest number is: " LARGEST.
 
            STOP RUN.
