@@ -1,0 +1,28 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. FindLargest.
+
+       ENVIRONMENT DIVISION.
+       INPUT-OUTPUT SECTION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 NUM1        PIC 9(5).
+       01 NUM2        PIC 9(5).
+       01 LARGEST     PIC 9(5).
+
+       PROCEDURE DIVISION.
+       BEGIN.
+           DISPLAY "Enter the first number: " WITH NO ADVANCING.
+           ACCEPT NUM1.
+           DISPLAY "Enter the second number: " WITH NO ADVANCING.
+           ACCEPT NUM2.
+
+           IF NUM1 > NUM2 THEN
+               MOVE NUM1 TO LARGEST
+           ELSE
+               MOVE NUM2 TO LARGEST
+           END-IF.
+
+           DISPLAY "The largest number is: " LARGEST.
+
+           STOP RUN.
